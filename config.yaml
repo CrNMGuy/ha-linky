@@ -1,9 +1,9 @@
 name: Linky150
 description: Sync Energy dashboards with your Linky smart meter
 version: 1.5.0
-slug: linky
+slug: linky150
 init: false
-url: https://github.com/bokub/ha-linky
+url: https://github.com/bokub/ha-linky150
 image: ghcr.io/bokub/ha-linky-{arch}
 arch:
   - aarch64
