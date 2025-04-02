@@ -55,7 +55,7 @@ export class LinkyClient {
       if (limitReached) {
         break;
       }
-      interval = (365 - 7) / maxLoops;
+      interval = (365 - 150) / maxLoops;
       fromDate = dayjs().subtract(offset + interval, 'days');
       from = fromDate.format('YYYY-MM-DD');
       to = dayjs().subtract(offset, 'days').format('YYYY-MM-DD');
