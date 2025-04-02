@@ -31,11 +31,16 @@ export class LinkyClient {
     let fromDate = dayjs().subtract(offset + interval, 'days');
     let from = fromDate.format('YYYY-MM-DD');
 
+      debug(`Debug from1 ${from} `);
+    
     if (isBefore(fromDate, firstDay)) {
       from = firstDay.format('YYYY-MM-DD');
       limitReached = true;
     }
 
+          debug(`Debug from2 ${from} `);
+
+    
     let to = dayjs().subtract(offset, 'days').format('YYYY-MM-DD');
 
     try {
