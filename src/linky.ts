@@ -48,7 +48,7 @@ export class LinkyClient {
         ? await this.session.getProductionLoadCurve(from, to)
         : await this.session.getLoadCurve(from, to);
       history.unshift(formatLoadCurve(loadCurve.interval_reading));
-      debug(`Successfully retrieved ${keyword} load curve from ${from} to ${to}`);
+      debug(`Successfully !! retrieved ${keyword} load curve from ${from} to ${to}`);
       offset += interval;
     } catch (e) {
       debug(`Cannot fetch ${keyword} load curve from ${from} to ${to}, here is the error:`);
