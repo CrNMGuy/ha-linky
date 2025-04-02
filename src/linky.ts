@@ -26,7 +26,7 @@ export class LinkyClient {
     let limitReached = false;
     const keyword = this.isProduction ? 'production' : 'consumption';
 
-    let interval = 7;
+    let interval = 150;
 
     let fromDate = dayjs().subtract(offset + interval, 'days');
     let from = fromDate.format('YYYY-MM-DD');
