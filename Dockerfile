@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.licenses=MIT
 
 RUN apk add --no-cache nodejs npm
 
-WORKDIR /linky
+WORKDIR /linky150
 
 # Install dependencies
 COPY package.json .
