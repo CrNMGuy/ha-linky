@@ -17,7 +17,7 @@ map:
   - addon_config
 options:
   meters:
-    - prm: ''
+    - prm: '123'
       token: ''
       name: 'Linky consumption'
       action: 'sync'
